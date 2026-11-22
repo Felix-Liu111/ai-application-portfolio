@@ -14,6 +14,13 @@
 
 ## 本地启动
 
+仓库不包含真实密钥。启动前复制 `.env.example` 为 `.env`，由运行者自行填写：
+
+- `DEEPSEEK_API_KEY`：用于对话和工具选择
+- `YUANFENJU_API_KEY`：用于八字、占卜和解梦工具
+
+Ollama 和 Redis 在本地运行，不需要 API Key。
+
 先在 Ollama 中准备嵌入模型：
 
 ```powershell

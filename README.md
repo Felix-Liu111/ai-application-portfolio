@@ -21,6 +21,14 @@
 - [RAG 文档问答源码](rag-doc-qa/)
 - [命理 Agent 源码](agent-numerology/)
 
+## 运行前配置
+
+仓库不包含真实 API Key，运行者需要自行申请并配置：
+
+- RAG：复制 `.env.example` 为 `.env`，填写自己的 `DEEPSEEK_API_KEY`
+- Agent：复制 `.env.example` 为 `.env`，填写 `DEEPSEEK_API_KEY`；使用八字、占卜和解梦工具还需要 `YUANFENJU_API_KEY`
+- Ollama 和 Redis 在本地运行，不需要 API Key
+
 ## 一张图看懂两个项目
 
 ![两个项目的整体架构总览](assets/architecture-overview.png)

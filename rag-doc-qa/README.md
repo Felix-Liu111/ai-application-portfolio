@@ -24,7 +24,7 @@ ollama pull bge-m3
 python main.py
 ```
 
-启动前在 `.env` 中填写 `DEEPSEEK_API_KEY`。
+仓库不包含真实密钥。启动前复制 `.env.example` 为 `.env`，由运行者自行填写 `DEEPSEEK_API_KEY`。Ollama 使用本地模型 `bge-m3`，不需要 API Key。
 
 ## RAGAS 示例
 
