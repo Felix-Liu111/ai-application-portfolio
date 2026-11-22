@@ -29,6 +29,17 @@
 - Agent：复制 `.env.example` 为 `.env`，填写 `DEEPSEEK_API_KEY`；使用八字、占卜和解梦工具还需要 `YUANFENJU_API_KEY`
 - Ollama 和 Redis 在本地运行，不需要 API Key
 
+## 环境要求
+
+- Python 3.11
+- Ollama，以及 `bge-m3` 嵌入模型
+- Docker Desktop：仅 Agent 的 Redis 或 Docker 启动方式需要
+
+完整命令见两个项目各自的 README：
+
+- [RAG 启动步骤](rag-doc-qa/README.md)
+- [Agent 启动步骤](agent-numerology/README.md)
+
 ## 一张图看懂两个项目
 
 ![两个项目的整体架构总览](assets/architecture-overview.png)

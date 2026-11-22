@@ -13,18 +13,53 @@
 
 当前演示版本没有接入独立重排模型，暂由查询改写与相关性过滤完成上下文整理。
 
-## 启动
+## 环境要求
+
+- Python 3.11
+- Ollama
+- DeepSeek API Key
+
+以下命令以 Windows PowerShell 为例；macOS/Linux 将虚拟环境激活命令替换为 `source .venv/bin/activate`。
+
+## 1. 准备 Ollama
+
+```powershell
+ollama pull bge-m3
+ollama list
+```
+
+确认输出包含 `bge-m3`。如果 Ollama 没有运行，先执行：
+
+```powershell
+ollama serve
+```
+
+## 2. 安装依赖与配置密钥
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 copy .env.example .env
-ollama pull bge-m3
+```
+
+编辑 `.env`，填写自己的 DeepSeek Key：
+
+```dotenv
+DEEPSEEK_API_KEY=你的密钥
+```
+
+仓库不包含真实密钥，`.env` 不要提交到 Git。
+
+## 3. 启动
+
+```powershell
 python main.py
 ```
 
-仓库不包含真实密钥。启动前复制 `.env.example` 为 `.env`，由运行者自行填写 `DEEPSEEK_API_KEY`。Ollama 使用本地模型 `bge-m3`，不需要 API Key。
+浏览器打开 `http://127.0.0.1:7860`。
+
+上传 [`sample-data/demo.md`](sample-data/demo.md)，选择对应知识库，然后提问“出差住宿标准是多少？”即可完成首次验证。
 
 ## RAGAS 示例
 
