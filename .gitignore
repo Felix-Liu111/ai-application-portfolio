@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime data
+logs/
+db/
+chroma/
+chroma_db/
+local_qdrand/
+
+# Local tools and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Raw video files belong in GitHub Releases
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Temporary renders
+*.tmp
+.render/

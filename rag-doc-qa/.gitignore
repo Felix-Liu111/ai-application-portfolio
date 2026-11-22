@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+chroma/
+db/
+logs/
+
+.idea/
+.vscode/
+
+示例文档/
