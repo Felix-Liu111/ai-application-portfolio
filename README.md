@@ -29,14 +29,14 @@
 
 ## 演示视频
 
-演示视频将通过 GitHub Release 发布，建议观看顺序：
+[观看 AI 应用作品集演示视频](https://github.com/Felix-Liu111/ai-application-portfolio/releases/tag/demo-v1)
+
+建议观看顺序：
 
 1. 问题与使用场景
 2. RAG 文档问答演示
 3. 命理 Agent 演示
 4. 架构、取舍与边界说明
-
-录制完成后，视频将上传到 [GitHub Releases](https://github.com/Felix-Liu111/ai-application-portfolio/releases)。
 
 ## 项目一：RAG 文档问答
 
